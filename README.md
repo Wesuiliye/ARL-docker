@@ -31,10 +31,13 @@ Centos以外的版本请注意，脚本采用的是yum安装工具，如果是ap
 
 输入数字确认安装版本：1 or 2
 
+可能会安装不了，那么就手动去pull 
+```
+docker pull do.nark.eu.org/honmashironeko/arl-docker-all
+```
 在安装完成之后进入容器：`docker exec -it arl /bin/bash`
 
 开始完成ARL部署：`bash /root/arl/set.sh`
-
 
 注意需要修改yum源与pip源
 
