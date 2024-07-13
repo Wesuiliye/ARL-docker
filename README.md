@@ -47,7 +47,7 @@ yum makecache fast
 ```
 
 **修改pip源**
-修改 ~/.pip/pip.conf (没有就创建一个文件夹及文件。）
+修改 ~/.pip/pip.conf (没有就创建一个文件夹及文件）
 mkdir ~/.pip
 然后在该目录下创建pip.conf文件填写：
 ```
