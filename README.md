@@ -35,9 +35,10 @@ Centos以外的版本请注意，脚本采用的是yum安装工具，如果是ap
 
 开始完成ARL部署：`bash /root/arl/set.sh`
 
+
 注意需要修改yum源与pip源
 
-修改yum源
+**修改yum源**
 ```
 mv /etc/yum.repos.d/CentOS-Base.repo /etc/yum.repos.d/CentOS-Base.repo.backup
 wget -O /etc/yum.repos.d/CentOS-Base.repo http://mirrors.aliyun.com/repo/Centos-7.repo
@@ -45,7 +46,7 @@ yum clean all
 yum makecache fast
 ```
 
-修改pip源
+**修改pip源**
 修改 ~/.pip/pip.conf (没有就创建一个文件夹及文件。）
 mkdir ~/.pip
 然后在该目录下创建pip.conf文件填写：
@@ -56,6 +57,7 @@ index-url = https://pypi.tuna.tsinghua.edu.cn/simple
 [install]
 trusted-host=mirrors.aliyun.com
 ```
+
 
 前往ARLweb页面：`https://IP:5003/`
 
